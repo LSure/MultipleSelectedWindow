@@ -63,6 +63,8 @@
 		887B919B1E16349F006C5652 /* SureMultipleSelectedWindow */ = {
 			isa = PBXGroup;
 			children = (
+				887B91A71E16349F006C5652 /* SureMultipleSelectedWindow.h */,
+				887B91A81E16349F006C5652 /* SureMultipleSelectedWindow.m */,
 				887B919C1E16349F006C5652 /* SureConditionCollectionViewCell.h */,
 				887B919D1E16349F006C5652 /* SureConditionCollectionViewCell.m */,
 				887B919E1E16349F006C5652 /* SureConditionCollectionViewCell.xib */,
@@ -74,8 +76,6 @@
 				887B91A41E16349F006C5652 /* SureHeaderCollectionReusableView.h */,
 				887B91A51E16349F006C5652 /* SureHeaderCollectionReusableView.m */,
 				887B91A61E16349F006C5652 /* SureHeaderCollectionReusableView.xib */,
-				887B91A71E16349F006C5652 /* SureMultipleSelectedWindow.h */,
-				887B91A81E16349F006C5652 /* SureMultipleSelectedWindow.m */,
 			);
 			path = SureMultipleSelectedWindow;
 			sourceTree = "<group>";

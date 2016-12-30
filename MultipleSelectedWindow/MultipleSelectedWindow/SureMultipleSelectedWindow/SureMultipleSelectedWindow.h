@@ -14,7 +14,7 @@
 
 + (void)showWindowWithTitle:(NSString*)title
          selectedConditions:(NSArray*)conditions
-       defaultSelectedConditions:(NSArray*)SelectedConditions
+       defaultSelectedConditions:(NSArray*)selectedConditions
               selectedBlock:(void(^)(NSArray *selectedArr))block;
 
 @end

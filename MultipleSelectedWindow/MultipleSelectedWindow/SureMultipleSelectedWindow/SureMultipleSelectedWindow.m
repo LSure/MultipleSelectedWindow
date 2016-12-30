@@ -28,7 +28,7 @@
 
 + (void)showWindowWithTitle:(NSString*)title
          selectedConditions:(NSArray*)conditions
-  defaultSelectedConditions:(NSArray*)SelectedConditions
+  defaultSelectedConditions:(NSArray*)selectedConditions
               selectedBlock:(void(^)(NSArray *selectedArr))block{
     SureMultipleSelectedWindow *window = [[SureMultipleSelectedWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     window.title = title;
@@ -36,7 +36,7 @@
     
     for (NSInteger i = 0; i < conditions.count; i++) {
         SureConditionModel *model = [[SureConditionModel alloc]init];
-        if ([SelectedConditions containsObject:conditions[i]]) {
+        if ([selectedConditions containsObject:conditions[i]]) {
             model.isSelected = YES;
             [window.selectedArr addObject:model];
         } else {
