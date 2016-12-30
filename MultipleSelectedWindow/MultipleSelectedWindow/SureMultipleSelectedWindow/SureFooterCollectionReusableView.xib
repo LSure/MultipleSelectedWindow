@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SureFooterCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3B-Ka-yeZ">
+                    <rect key="frame" x="0.0" y="10" width="160" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.92549019607843142" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Ist-aB-Vwf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02W-xU-9xM">
+                    <rect key="frame" x="160" y="10" width="160" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="pfn-nA-BL7"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4O-va-LnK">
+                    <rect key="frame" x="0.0" y="5" width="320" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fCf-VF-f8b"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwV-Ya-zAh">
+                    <rect key="frame" x="159.5" y="6" width="1" height="44"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="mNQ-5M-8dL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Y3B-Ka-yeZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="DLX-6l-yGB"/>
+                <constraint firstItem="Y4O-va-LnK" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="De9-mH-JEj"/>
+                <constraint firstItem="Y4O-va-LnK" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="5" id="QKh-VM-0mk"/>
+                <constraint firstAttribute="bottom" secondItem="MwV-Ya-zAh" secondAttribute="bottom" id="TGM-de-KwY"/>
+                <constraint firstItem="MwV-Ya-zAh" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="Ufp-Vw-xrt"/>
+                <constraint firstAttribute="trailing" secondItem="Y4O-va-LnK" secondAttribute="trailing" id="esE-5l-z7O"/>
+                <constraint firstItem="MwV-Ya-zAh" firstAttribute="top" secondItem="Y4O-va-LnK" secondAttribute="bottom" id="kWY-K5-ina"/>
+                <constraint firstItem="02W-xU-9xM" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="1:2" id="mCm-Yq-KK3"/>
+                <constraint firstAttribute="trailing" secondItem="02W-xU-9xM" secondAttribute="trailing" id="nH9-EO-gWM"/>
+                <constraint firstItem="02W-xU-9xM" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="oBI-vn-Lwb"/>
+                <constraint firstItem="Y3B-Ka-yeZ" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="r1C-zM-x3A"/>
+                <constraint firstItem="Y3B-Ka-yeZ" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="1:2" id="vNJ-wT-ZeS"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+</document>
