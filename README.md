@@ -1,6 +1,3 @@
-<<<<<<< .merge_file_EJ4gEr
-# MultipleSelectedWindow
-=======
 # MultipleSelectedWindow
 ######前言
 本文为iOS自定义视图封装《一劳永逸》系列的第三期，旨在提供封装思路，结果固然重要，但理解过程才最好。授人以鱼不如授人以渔。⚠️文章旨在帮助封装程度较低的朋友们，大神可无视，勿喷。
