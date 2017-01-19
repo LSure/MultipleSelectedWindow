@@ -161,4 +161,4 @@ if (window.dataArr.count % 2 != 0) {
         NSLog(@"%@",selectedArr);
 }];
 ```
-至此多选弹窗即封装完毕。demo以上传GitHub，喜欢的给个Star，多谢🙏
+至此多选弹窗即封装完毕。
